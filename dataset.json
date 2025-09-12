@@ -1,0 +1,378 @@
+{
+    "report_name": "seowork.context",
+    "dimensions": {
+        "date": {
+            "allow_filter": false,
+            "allow_sort": true,
+            "type": "date",
+            "description": "Дата",
+
+            "descriptions": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Дата"
+                }
+            ]
+        },
+        "week": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "int",
+            "description": "Неделя",
+
+            "descriptions": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Неделя"
+                }
+            ]
+        },
+        "serp_device": {
+            "allow_filter": true,
+            "allow_sort": false,
+            "type": "string",
+            "description": "Устройство",
+
+            "descriptions": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Устройство"
+                }
+            ]
+        },
+        "serp_os": {
+            "allow_filter": true,
+            "allow_sort": false,
+            "type": "string",
+            "description": "Операционная система",
+
+            "descriptions": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Операционная система"
+                }
+            ]
+        },
+        "serp_region": {
+            "allow_filter": true,
+            "allow_sort": false,
+            "type": "string",
+            "description": "Регион",
+
+            "descriptions": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Регион"
+                }
+            ]
+        },
+        "space_id": {
+            "default_selected_field": true,
+            "allow_filter": false,
+            "allow_sort": false,
+            "type": "int",
+            "description": "ID Пространства",
+
+            "descriptions": [
+                {
+                    "lang": "ru_RU",
+                    "name": "ID Пространства"
+                }
+            ]
+        },
+        "project_id": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "int",
+            "description": "ID Проекта",
+
+            "descriptions": [
+                {
+                    "lang": "ru_RU",
+                    "name": "ID Проекта"
+                }
+            ]
+        },
+        "root_folder_id": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "int",
+            "description": "ID Корневой папки",
+
+            "descriptions": [
+                {
+                    "lang": "ru_RU",
+                    "name": "ID Корневой папки"
+                }
+            ]
+        },
+        "folder_id": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "int",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "ID Папки"
+                }
+            ]
+        },
+        "query": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "int",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Ключевое слово"
+                }
+            ]
+        },
+        "query_id": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "string",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "ID Ключевого слова"
+                }
+            ]
+        },
+        "domain": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "string",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Домен"
+                }
+            ]
+        }
+    },
+    "metrics": {
+        "prc_count_top1":  {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "%ПЗ ТОП1"
+                }
+            ]
+        },
+        "prc_count_top1_diff_day": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %ПЗ ТОП1 с предыдущим днем"
+                }
+            ]
+        },
+        "prc_count_top1_diff_week": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %ПЗ ТОП1 с предыдущей неделей"
+                }
+            ]
+        },
+        "prc_count_top3":  {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "%ПЗ ТОП3"
+                }
+            ]
+        },
+        "prc_count_top3_diff_day": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %ПЗ ТОП3 с предыдущим днем"
+                }
+            ]
+        },
+        "prc_count_top3_diff_week": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %ПЗ ТОП3 с предыдущей неделей"
+                }
+            ]
+        },
+        "prc_count":  {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "%ПЗ Общий"
+                }
+            ]
+        },
+        "prc_count_diff_day": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %ПЗ Общий с предыдущим днем"
+                }
+            ]
+        },
+        "prc_count_diff_week": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %ПЗ Общий с предыдущей неделей"
+                }
+            ]
+        },
+        "prc_ws_top1":  {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "%SOI ТОП1"
+                }
+            ]
+        },
+        "prc_ws_top1_diff_day": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %SOI ТОП1 с предыдущим днем"
+                }
+            ]
+        },
+        "prc_ws_top1_diff_week": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %SOI ТОП1 с предыдущей неделей"
+                }
+            ]
+        },
+        "prc_ws_top3":  {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "%SOI ТОП3"
+                }
+            ]
+        },
+        "prc_ws_top3_diff_day": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %SOI ТОП3 с предыдущем днем"
+                }
+            ]
+        },
+        "prc_ws_top3_diff_week": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %SOI ТОП3 с предыдущей неделей"
+                }
+            ]
+        },
+        "prc_ws":  {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "%SOI Общий"
+                }
+            ]
+        },
+        "prc_ws_diff_day": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %SOI Общий с предыдущим днем"
+                }
+            ]
+        },
+        "prc_ws_diff_week": {
+            "allow_filter": true,
+            "allow_sort": true,
+            "type": "float",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Разница %SOI Общий с предыдущей неделей"
+                }
+            ]
+        }
+    },
+    "attributes": {
+        "date_from": {
+            "allow_filter": false,
+            "allow_sort": false,
+            "type": "date",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Начало периода"
+                }
+            ]
+        },
+        "date_to": {
+            "allow_filter": false,
+            "allow_sort": false,
+            "type": "date",
+            "description": [
+                {
+                    "lang": "ru_RU",
+                    "name": "Конец периода"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,349 @@
+{
+    "charts": [
+        {
+            "meta_widget": {
+                "type": "table",
+                "columns": [
+                    {
+                        "id": "2",
+                        "selectors": []
+                    }
+                ],
+                "rows": [],
+                "data": []
+            },
+            "metadata": {
+                "report_name": "seowork.context",
+                "periods": [
+                    [
+                        "from",
+                        "to"
+                    ]
+                ],
+                "fields": [
+                    {
+                        "id": "1",
+                        "name": "space_id",
+                        "selectors": [],
+                        "description": "ID Пространства"
+                    },
+                    {
+                        "id": "2",
+                        "name": "date",
+                        "description": "Дата",
+                        "selectors": [
+                            {
+                                "values": [
+                                    "2.1"
+                                ],
+                                "name": "date",
+                                "description": "Дата"
+                            },
+                            {
+                                "values": [
+                                    "2.2"
+                                ],
+                                "name": "week",
+                                "description": "Неделя"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "name": "domain",
+                        "description": "Домен",
+                        "selectors": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "prc_ws_top1",
+                        "description": "%SOI ТОП1",
+                        "selectors": [
+                            {
+                                "values": [
+                                    "1.1"
+                                ],
+                                "name": "prc_ws_top1",
+                                "description": "%SOI ТОП1"
+                            },
+                            {
+                                "values": [
+                                    "1.2"
+                                ],
+                                "name": "prc_ws_top3",
+                                "description": "%SOI ТОП3"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "5",
+                        "name": "prc_ws_top1_diff_day",
+                        "selectors": [
+                            {
+                                "values": [
+                                    "1.1",
+                                    "2.1"
+                                ],
+                                "name": "prc_ws_top1_diff_day"
+                            },
+                            {
+                                "values": [
+                                    "1.1",
+                                    "2.2"
+                                ],
+                                "name": "prc_ws_top1_diff_week"
+                            },
+                            {
+                                "values": [
+                                    "1.2",
+                                    "2.1"
+                                ],
+                                "name": "prc_ws_top3_diff_day"
+                            },
+                            {
+                                "values": [
+                                    "1.2",
+                                    "2.2"
+                                ],
+                                "name": "prc_ws_top3_diff_week"
+                            }
+                        ]
+                    }
+                ],
+                "depend_filters": [
+                    {
+                        "id": "1",
+                        "fields": [
+                            {
+                                "name": "serp_device",
+                                "selectors": [],
+                                "filter_name": "device",
+                                "operator": "eq",
+                                "split": "OR"
+                            },
+                            {
+                                "name": "serp_os",
+                                "selectors": [],
+                                "filter_name": "os",
+                                "operator": "eq",
+                                "split": "OR"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "fields": [
+                            {
+                                "name": "domain",
+                                "selectors": [],
+                                "filter_name": "domain",
+                                "operator": "eq",
+                                "split": "OR"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "selectors": [
+        {
+            "id": "1",
+            "default_id_value": "1",
+            "values": [
+                {
+                    "id": "1",
+                    "description": "%SOI TOP1"
+                },
+                {
+                    "id": "2",
+                    "description": "%SOI TOP3"
+                },
+                {
+                    "id": "3",
+                    "description": "%SOI Общий"
+                },
+                {
+                    "id": "4",
+                    "description": "%ПЗ ТОП1"
+                },
+                {
+                    "id": "5",
+                    "description": "%ПЗ ТОП3"
+                },
+                {
+                    "id": "6",
+                    "description": "%ПЗ Общий"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "default_id_value": "2",
+            "values": [
+                {
+                    "id": "1",
+                    "description": "День"
+                },
+                {
+                    "id": "2",
+                    "description": "Неделя"
+                }
+            ]
+        }
+    ],
+    "filters": {
+        "static_filters": [
+            {
+                "id": "1",
+                "description": "Конкуренты",
+                "type": "radio",
+                "values": {
+                    "dynamic": [
+                        {
+                            "id": "1",
+                            "description": "TOП10",
+                            "metadata": {
+                                "report_name": "seowork.context",
+                                "periods": [
+                                    [
+                                        "from",
+                                        "to"
+                                    ]
+                                ],
+                                "fields": [
+                                    {
+                                        "name": "space_id",
+                                        "selectors": []
+                                    },
+                                    {
+                                        "name": "domain",
+                                        "selectors": []
+                                    },
+                                    {
+                                        "name": "ws",
+                                        "selectors": []
+                                    }
+                                ],
+                                "related_filters": [
+                                    {
+                                        "id": "1",
+                                        "fields": [
+                                            {
+                                                "name": "serp_device",
+                                                "selectors": []
+                                            },
+                                            {
+                                                "name": "serp_os",
+                                                "selectors": []
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "order_by": [
+                                    "+ws"
+                                ],
+                                "limit": 10,
+                                "offset": null
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "desc": "TOП20",
+                            "metadata": {
+                                "report_name": "seowork.context",
+                                "periods": [
+                                    [
+                                        "from",
+                                        "to"
+                                    ]
+                                ],
+                                "fields": [
+                                    {
+                                        "name": "space_id",
+                                        "selectors": []
+                                    },
+                                    {
+                                        "name": "domain",
+                                        "selectors": []
+                                    },
+                                    {
+                                        "name": "ws",
+                                        "selectors": []
+                                    }
+                                ],
+                                "order_fields": [
+                                    "+ws"
+                                ],
+                                "limit": 20,
+                                "offset": null
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "desc": "TOП30",
+                            "metadata": {
+                                "report_name": "seowork.context",
+                                "periods": [
+                                    [
+                                        "from",
+                                        "to"
+                                    ]
+                                ],
+                                "fields": [
+                                    {
+                                        "name": "space_id",
+                                        "selectors": []
+                                    },
+                                    {
+                                        "name": "domain",
+                                        "selectors": []
+                                    },
+                                    {
+                                        "name": "ws",
+                                        "selectors": []
+                                    }
+                                ],
+                                "order_fields": [
+                                    {
+                                        "name": "ws",
+                                        "selectors": [],
+                                        "sorting": "+"
+                                    }
+                                ],
+                                "limit": 30,
+                                "offset": null
+                            }
+                        }
+                    ],
+                    "static": []
+                }
+            }
+        ],
+        "dynamic_filters": [
+            {
+                "id": "1",
+                "description": "Устройство и ОС",
+                "type": "checkbox",
+                "metadata": {
+                    "report_name": "seowork.production_serp_setting",
+                    "periods": [
+                        [
+                            "to"
+                        ]
+                    ],
+                    "fields": [
+                        {
+                            "name": "device",
+                            "selectors": []
+                        },
+                        {
+                            "name": "os",
+                            "selectors": []
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
