@@ -1,7 +1,7 @@
 {
     "charts": [
         {
-            "meta_widget": {
+            "widget": {
                 "type": "table",
                 "columns": [
                     {
@@ -9,8 +9,22 @@
                         "selectors": []
                     }
                 ],
-                "rows": [],
-                "data": []
+                "rows": [
+                    {
+                        "id": "3",
+                        "selectors": []
+                    }
+                ],
+                "data": [
+                    {
+                        "id": "4",
+                        "selectors": []
+                    },
+                    {
+                        "id": "5",
+                        "selectors": []
+                    }
+                ]
             },
             "metadata": {
                 "report_name": "seowork.context",
@@ -195,7 +209,7 @@
     "filters": {
         "static_filters": [
             {
-                "id": "1",
+                "id": "2",
                 "description": "Конкуренты",
                 "type": "radio",
                 "values": {
@@ -213,35 +227,42 @@
                                 ],
                                 "fields": [
                                     {
-                                        "name": "space_id",
-                                        "selectors": []
-                                    },
-                                    {
+                                        "id": "1",
                                         "name": "domain",
                                         "selectors": []
                                     },
                                     {
+                                        "id": "2",
                                         "name": "ws",
                                         "selectors": []
                                     }
                                 ],
-                                "related_filters": [
+                                "depend_filters": [
                                     {
                                         "id": "1",
                                         "fields": [
                                             {
                                                 "name": "serp_device",
-                                                "selectors": []
+                                                "selectors": [],
+                                                "filter_name": "device",
+                                                "operator": "eq",
+                                                "split": "OR"
                                             },
                                             {
                                                 "name": "serp_os",
-                                                "selectors": []
+                                                "selectors": [],
+                                                "filter_name": "os",
+                                                "operator": "eq",
+                                                "split": "OR"
                                             }
                                         ]
                                     }
                                 ],
-                                "order_by": [
-                                    "+ws"
+                                "order_fields": [
+                                    {
+                                        "id": "2",
+                                        "sorting": "+"
+                                    }
                                 ],
                                 "limit": 10,
                                 "offset": null
@@ -260,20 +281,42 @@
                                 ],
                                 "fields": [
                                     {
-                                        "name": "space_id",
-                                        "selectors": []
-                                    },
-                                    {
+                                        "id": "1",
                                         "name": "domain",
                                         "selectors": []
                                     },
                                     {
+                                        "id": "2",
                                         "name": "ws",
                                         "selectors": []
                                     }
                                 ],
+                                "depend_filters": [
+                                    {
+                                        "id": "1",
+                                        "fields": [
+                                            {
+                                                "name": "serp_device",
+                                                "selectors": [],
+                                                "filter_name": "device",
+                                                "operator": "eq",
+                                                "split": "OR"
+                                            },
+                                            {
+                                                "name": "serp_os",
+                                                "selectors": [],
+                                                "filter_name": "os",
+                                                "operator": "eq",
+                                                "split": "OR"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "order_fields": [
-                                    "+ws"
+                                    {
+                                        "id": "2",
+                                        "sorting": "+"
+                                    }
                                 ],
                                 "limit": 20,
                                 "offset": null
@@ -292,22 +335,40 @@
                                 ],
                                 "fields": [
                                     {
-                                        "name": "space_id",
-                                        "selectors": []
-                                    },
-                                    {
+                                        "id": "1",
                                         "name": "domain",
                                         "selectors": []
                                     },
                                     {
+                                        "id": "2",
                                         "name": "ws",
                                         "selectors": []
                                     }
                                 ],
+                                "depend_filters": [
+                                    {
+                                        "id": "1",
+                                        "fields": [
+                                            {
+                                                "name": "serp_device",
+                                                "selectors": [],
+                                                "filter_name": "device",
+                                                "operator": "eq",
+                                                "split": "OR"
+                                            },
+                                            {
+                                                "name": "serp_os",
+                                                "selectors": [],
+                                                "filter_name": "os",
+                                                "operator": "eq",
+                                                "split": "OR"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "order_fields": [
                                     {
-                                        "name": "ws",
-                                        "selectors": [],
+                                        "id": "2",
                                         "sorting": "+"
                                     }
                                 ],
@@ -334,10 +395,12 @@
                     ],
                     "fields": [
                         {
+                            "id": "1",
                             "name": "device",
                             "selectors": []
                         },
                         {
+                            "id": "2",
                             "name": "os",
                             "selectors": []
                         }
