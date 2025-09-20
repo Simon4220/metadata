@@ -1,156 +1,101 @@
 {
+    "id": "dataset ID",
     "report_name": "seowork.context",
-    "dimensions": {
-        "date": {
+    "dimensions": [
+        {
+            "id": 1,
+            "name": "date",
             "allow_filter": false,
             "allow_sort": true,
             "type": "date",
-            "description": "Дата",
-
-            "descriptions": [
-                {
-                    "lang": "ru_RU",
-                    "name": "Дата"
-                }
-            ]
+            "description": "Дата"
         },
-        "week": {
+        {
+            "id": 2,
+            "name": "week",
             "allow_filter": true,
             "allow_sort": true,
             "type": "int",
-            "description": "Неделя",
-
-            "descriptions": [
-                {
-                    "lang": "ru_RU",
-                    "name": "Неделя"
-                }
-            ]
+            "description": "Неделя"
         },
-        "serp_device": {
+        {
+            "id": 3,
+            "name": "serp_device",
             "allow_filter": true,
             "allow_sort": false,
             "type": "string",
-            "description": "Устройство",
-
-            "descriptions": [
-                {
-                    "lang": "ru_RU",
-                    "name": "Устройство"
-                }
-            ]
+            "description": "Устройство"
         },
-        "serp_os": {
+        {
+            "id": 4,
+            "name": "serp_os",
             "allow_filter": true,
             "allow_sort": false,
             "type": "string",
-            "description": "Операционная система",
-
-            "descriptions": [
-                {
-                    "lang": "ru_RU",
-                    "name": "Операционная система"
-                }
-            ]
+            "description": "Операционная система"
         },
-        "serp_region": {
+        {
+            "id": 5,
+            "name": "serp_region",
             "allow_filter": true,
             "allow_sort": false,
             "type": "string",
-            "description": "Регион",
-
-            "descriptions": [
-                {
-                    "lang": "ru_RU",
-                    "name": "Регион"
-                }
-            ]
+            "description": "Регион"
         },
-        "space_id": {
+        {
+            "id": 6,
+            "name": "space_id",
             "default_selected_field": true,
             "allow_filter": false,
             "allow_sort": false,
             "type": "int",
-            "description": "ID Пространства",
-
-            "descriptions": [
-                {
-                    "lang": "ru_RU",
-                    "name": "ID Пространства"
-                }
-            ]
+            "description": "ID Пространства"
         },
-        "project_id": {
+        {
+            "id": 7,
+            "name": "project_id",
             "allow_filter": true,
             "allow_sort": true,
             "type": "int",
-            "description": "ID Проекта",
-
-            "descriptions": [
-                {
-                    "lang": "ru_RU",
-                    "name": "ID Проекта"
-                }
-            ]
+            "description": "ID Проекта"
         },
-        "root_folder_id": {
+        {
+            "id": 8,
+            "name": "root_folder_id",
             "allow_filter": true,
             "allow_sort": true,
             "type": "int",
-            "description": "ID Корневой папки",
-
-            "descriptions": [
-                {
-                    "lang": "ru_RU",
-                    "name": "ID Корневой папки"
-                }
-            ]
+            "description": "ID Корневой папки"
         },
-        "folder_id": {
+        {
+            "id": 9,
+            "name": "folder_id",
             "allow_filter": true,
             "allow_sort": true,
-            "type": "int",
-            "description": [
-                {
-                    "lang": "ru_RU",
-                    "name": "ID Папки"
-                }
-            ]
+            "type": "int"
         },
-        "query": {
+        {
+            "id": 10,
+            "name": "query",
             "allow_filter": true,
             "allow_sort": true,
-            "type": "int",
-            "description": [
-                {
-                    "lang": "ru_RU",
-                    "name": "Ключевое слово"
-                }
-            ]
+            "type": "int"
         },
-        "query_id": {
+        {
+            "id": 11,
+            "name": "query_id",
             "allow_filter": true,
             "allow_sort": true,
-            "type": "string",
-            "description": [
-                {
-                    "lang": "ru_RU",
-                    "name": "ID Ключевого слова"
-                }
-            ]
+            "type": "string"
         },
-        "domain": {
+        {
+            "id": 12,
+            "name": "domain",
             "allow_filter": true,
             "allow_sort": true,
-            "type": "string",
-            "description": [
-                {
-                    "lang": "ru_RU",
-                    "name": "Домен"
-                }
-            ]
+            "type": "string"
         }
-    },
+    ],
     "metrics": {
         "prc_count_top1":  {
             "allow_filter": true,
